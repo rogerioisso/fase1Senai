@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <p>🍕 3. A Pizzaria do Código
+        História:
+        João quer pedir pizza, mas só se:
+        Ele tiver dinheiro e estiver com fome.
+        Ou se for sexta-feira (porque é tradição!.
+        Desafio:
+        let temDinheiro;
+        let estaComFome;
+        let hojeEhSexta;
+        Exiba:
+        "Vamos pedir pizza!" ou
+        "Hoje não é dia de pizza."</p>
+        <form>
+            <label>Tem dinheiro?</label>
+            <input id="temDinheiro" type="text">
+            <label>Está com fome?</label>
+            <input id="estaComFome" type="text">
+            <label>Hoje é sexta feira?</label>
+            <input id="hojeEhSexta" type="text">
+            <input type="button" id="button" value="Submit" onsubmit="pedirPizza()">
+        </form>
+
+    <p id="resultado"></p>
+    <script>
+        const button = document.getElementById('button');
+
+        function pedirPizza() {
+            temDinheiro = document.getElementById('temDinheiro').value;
+            estaComFome = document.getElementById('estaComFome').value;
+            hojeEhSexta = document.getElementById('hojeEhSexta').value;
+
+            if((temDinheiro === "sim" || temDinheiro === "Sim" || temDinheiro === "SIM") && (estaComFome === "sim" || estaComFome === "Sim" || estaComFome === "SIM") || (hojeEhSexta === "sim" || hojeEhSexta === "Sim" || hojeEhSexta === "SIM")){
+               document.getElementById('resultado').innerHTML = "Vamos pedir pizza!"    
+            } else {
+                document.getElementById('resultado').innerHTML = "Hoje não é dia de pizza :/"
+            }
+
+        }
+
+
+
+        button.addEventListener('click', pedirPizza);
+    </script>
+
+</body>
+</html>

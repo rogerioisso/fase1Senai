@@ -1,0 +1,199 @@
+2. Dragões e Condições
+História:
+Um guerreiro encontrou um dragão! Se ele tiver uma espada mágica e mais de 18
+anos, ele pode lutar. Se não, deve fugir.
+Desafio:
+Crie um programa que receba:
+let idade;
+let temEspadaMagica;
+E exiba:
+"Você pode lutar contra o dragão!" ouLista de exercícios1
+"Fuja enquanto é tempo!"
+
+🍕 3. A Pizzaria do Código
+História:
+João quer pedir pizza, mas só se:
+Ele tiver dinheiro e estiver com fome.
+Ou se for sexta-feira (porque é tradição!.
+Desafio:
+let temDinheiro;
+let estaComFome;
+let hojeEhSexta;
+Exiba:
+"Vamos pedir pizza!" ou
+"Hoje não é dia de pizza."
+
+🧃 4. A Máquina de Suco Inteligente
+História:
+Uma máquina mágica de sucos aceita o nome da fruta e prepara o suco
+correspondente. Se não reconhecer a fruta, diz que está fora do cardápio.
+Desafio:
+Use if/else com strings.
+let fruta;
+Se fruta for:
+"laranja" → "Preparando suco de laranja 🍊"
+"uva" → "Preparando suco de uva 🍇"
+"morango" → "Preparando suco de morango 🍓"Lista de exercícios2
+qualquer outro → "Essa fruta não está disponível 😢"🕵️‍♀️
+
+5. Detetive dos Dados
+História:
+Você é um detetive cibernético e precisa descobrir se dois suspeitos dizem a
+mesma coisa, mas com tipos diferentes.
+Desafio:
+let suspeito1  "42";
+let suspeito2  42;
+Use operadores de comparação ( == e === ) para responder:
+"Eles dizem a mesma coisa, mas de formas diferentes." ou
+"Eles são exatamente iguais." ou
+"Eles são diferentes."
+
+🛒 6. O Carrinho da Loja
+História:
+Uma loja só dá desconto se o cliente comprar mais de 3 itens ou se o valor total
+for maior que R$ 100.
+Desafio:
+let quantidadeItens;
+let valorTotal;
+Mostre:
+"Desconto aplicado!" ou
+"Sem desconto dessa vez."
+
+🧃 7. O Robô do CaféLista de exercícios3
+História:
+Um robô serve café conforme o pedido. Ele só aceita "café", "capuccino" ou
+"expresso". Qualquer outro pedido, ele responde educadamente.
+Desafio:
+let pedido;
+Responda com:
+"Servindo café ☕"
+"Servindo capuccino 🧋"
+"Servindo expresso 🔥"
+"Desculpe, não temos esse tipo de café 😔"
+
+🚀 8. Missão: Planeta JavaScript
+História:
+Você é um astronauta tentando pousar no Planeta JavaScript. A nave só pousa se
+o combustível for maior que 50 e o clima for "bom".
+Desafio:
+let combustivel;
+let clima;
+Exiba:
+"Pouso autorizado!" ou
+"Abortar missão!"
+
+🎁 9. Presente SecretoLista de exercícios4
+História:
+Você entrou em um jogo de presente secreto. Se você tirou "Carlos", você deve
+comprar um livro. Se tirou "Ana", um chocolate. Qualquer outro nome, um
+presente surpresa!
+Desafio:
+let nomeSorteado;
+Resultado esperado:
+"Compre um livro 📚"
+"Compre um chocolate 🍫"
+"Compre um presente surpresa 🎁"
+
+🕹 10. Jogo de Pontuação
+História:
+Você precisa verificar se um jogador venceu. Se a pontuação for maior ou igual a
+100, ele vence.
+Desafio:
+let pontos;
+Exiba:
+"Você venceu! 🏆" ou
+"Continue jogando! 🎮"
+
+🎬 11. Sessão de Cinema
+História:Lista de exercícios5
+A entrada no cinema é gratuita para crianças até 12 anos ou idosos acima de 60.
+Desafio:
+let idade;
+Exiba:
+"Entrada gratuita 🎟" ou
+"Precisa pagar ingresso 💳"🧙‍♀️
+
+12. Poção Misteriosa
+História:
+Para preparar uma poção, o bruxo precisa misturar exatamente dois ingredientes
+certos.
+Desafio:
+let ingrediente1  "pele de sapo";
+let ingrediente2  "asa de morcego";
+Verifique se os ingredientes são exatamente esses. Se forem, diga "Poção
+pronta!", senão "Mistura errada!"
+
+🎈 13. Festa VIP
+História:
+Só entra na festa VIP quem estiver na lista de convidados e trouxer convite.
+Desafio:
+let nome = "Joana";
+let temConvite = true;
+Use if/else para dizer se pode entrar ou não.
+
+🐶 14. Passeio com o PetLista de exercícios6
+História:
+Você só vai passear com seu cachorro se não estiver chovendo e se tiver tempo.
+Desafio:
+let estaChovendo;
+let temTempo;
+Exiba:
+"Hora do passeio! 🐾" ou
+"Hoje não vai dar... ☔"
+
+🍦 15. Sorveteria Gelada
+História:
+O cliente quer um sabor de sorvete. Só há: "baunilha", "chocolate" ou "morango".
+Desafio:
+let sabor;
+Use condicionais para exibir:
+"Servindo sorvete de [sabor] 🍦"
+Ou "Sabor indisponível 😢"
+
+🧑‍🍳 16. MasterChef Lógico
+História:
+Você precisa preparar um prato especial se o ingrediente principal ou o tempero
+secreto estiver disponível.
+Desafio:
+let temIngredientePrincipal;
+let temTemperoSecreto;Lista de exercícios7
+Exiba:
+"Prato especial pronto! 🍽" ou
+"Sem os ingredientes necessários. 😕"
+
+🧪 17. Laboratório de Comparações
+História:
+Você está testando o comportamento de operadores == e === em uma variável
+string e number.
+Desafio:
+let valor1  "100";
+let valor2  100;
+Compare com == e === , e explique o resultado com console.log() .
+
+⛷ 18. Esqui na Montanha
+História:
+A pista de esqui está liberada apenas para maiores de 16 anos e que tenham
+equipamento completo.
+Desafio:
+let idade;
+let temEquipamento;
+Exiba:
+"Pode esquiar 🎿" ou
+"Não liberado."
+
+🎒 19. Lista de Material Escolar
+História:Lista de exercícios8
+Se a criança for do ensino fundamental, precisa levar lápis. Se for do médio, leva
+caneta. Se for outro, leva ambos!
+Desafio:
+let tipoEnsino = "fundamental";
+Use if/else para mostrar o material adequado.
+
+🛸 20. Contato Alienígena
+História:
+Você está tentando se comunicar com um alien usando sinais booleanos.
+Desafio:
+let sinal1  true;
+let sinal2  false;
+Se ambos forem true , envie "Sinal de paz enviado 🛸", senão "Sem contato
+estabelecido."

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 AVA</title>
+</head>
+<body>
+    <p>2. Dragões e Condições
+        História:
+        Um guerreiro encontrou um dragão! Se ele tiver uma espada mágica e mais de 18
+        anos, ele pode lutar. Se não, deve fugir.
+        Desafio:
+        Crie um programa que receba:
+        let idade;
+        let temEspadaMagica;
+        E exiba:
+        "Você pode lutar contra o dragão!" ou "Fuja enquanto é tempo!"</p>
+
+        <form>
+            <label>Idade: </label>
+            <input id="idade" type="number">
+            <label>Tem uma espada mágica seu nerdzão?</label>
+            <input id="temEspadaMagica" type="text">
+            <input type="button" id="button" value="Submit" onsubmit="batalharDragao()">
+        </form>
+
+        <p id="resultado"></p>
+
+        <script>
+            const button = document.getElementById('button');
+
+            function batalharDragao() {
+                idade = parseInt(document.getElementById('idade').value);
+                temEspadaMagica = document.getElementById('temEspadaMagica').value;
+
+                if((idade >= 18) && (temEspadaMagica == 'sim')) {
+                    document.getElementById('resultado').innerHTML = "Você pode lutar contra o dragão!";
+                } else {
+                    document.getElementById('resultado').innerHTML = "Fuja enquanto é tempo!";
+                }
+
+            }
+
+            button.addEventListener('click', batalharDragao);
+        </script>
+    
+</body>
+</html>

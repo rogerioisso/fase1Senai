@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <div>
+        <h5>
+            2) Faça um programa no qual o usuário digite dois números e mostre na tela a multiplicação
+            desses números.
+
+        </h5>
+    </div>
+    
+    <form>
+        <label>Primeiro Numero: </label>
+        <input id="numeroUm" type="number">
+        <label>Segundo Numero: </label>
+        <input id="numeroDois" type="number">
+        <input type="button" value="Calcular" id="calcular" onclick="getCalculo()">
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        const button = document.getElementById('button');
+
+        function getCalculo() {
+            n1 = document.getElementById('numeroUm').value;
+            n2 = document.getElementById('numeroDois').value;
+
+            total = n1 * n2;
+
+            document.getElementById('resultado').innerHTML = total;
+        }
+
+        button.addEventListener('click', getCalculo);
+
+    </script>
+</body>
+</html>

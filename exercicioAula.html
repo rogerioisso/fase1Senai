@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio aula</title>
+</head>
+<body>
+    <label>Primeira nota: </label>
+    <input id="notaPrimeira_" type="number">
+    <label>Segunda nota: </label>
+    <input id="notaSegunda_" type="number">
+    <label>Terceira nota: </label>
+    <input id="notaTerceira_" type="number">
+    <label>Quarta nota: </label>
+    <input id="notaQuarta" type="number">
+    <input type="button" id="button" value="Submit" onsubmit="calcularMedia()">
+    
+    <script>
+        const button = document.getElementById('button');
+        function calcularMedia(){
+            notaPrimeira = parseFloat(document.getElementById('notaPrimeira_').value);
+            notaSegunda = parseFloat(document.getElementById('notaSegunda_').value);
+            notaTerceira = parseFloat(document.getElementById('notaTerceira_').value);
+            notaQuarta = parseFloat(document.getElementById('notaQuarta').value);
+    
+            media = (notaPrimeira + notaSegunda + notaTerceira + notaQuarta) / 4
+            if(media >= 7){
+                document.getElementById('resultado').innerHTML = "Aluno aprovado <br>Media: " + media;
+            }else{
+                document.getElementById('resultado').innerHTML = "Aluno reprovado <br>Media: " + media;
+            }
+            
+        }
+        button.addEventListener('click', calcularMedia);
+    </script>
+    <p id="resultado"></p>
+
+</body>
+
+
+
+</html>

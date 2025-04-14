@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4-</title>
+</head>
+<body>
+    <p>4) Desenvolva um programa que pergunte ao usuário o salário bruto e calcule o salário líquido, 
+        considerando um desconto de 20% para impostos.
+    </p>
+
+    <form>
+        <label>Salario bruto: </label>
+        <input id="salarioBruto_" type="number">
+        <input type="button" id="button" value="Submit" onsubmit="calcularSalario()">
+    </form>
+    <p id="resultado"></p>
+    <script>
+         const button = document.getElementById('button');
+
+         function calcularSalario(){
+            const salarioDesconto = 20;
+            salarioBruto = parseFloat(document.getElementById('salarioBruto_').value);
+
+            salarioDescontoporc = (salarioBruto * salarioDesconto) / 100;
+            salarioBruto += salarioDescontoporc;
+
+            document.getElementById('resultado').innerHTML = "Salário liquido: " + salarioBruto;
+         }
+
+         button.addEventListener('click', calcularSalario);
+
+    </script>
+
+    
+</body>
+</html>

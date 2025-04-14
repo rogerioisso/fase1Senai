@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <p>3) Desenvolva uma programação que peça ao usuário para digitar o ano do seu nascimento no
+        formato (YYYY) e o ano atual também no formato (YYYY). Em seguida mostre na tela qual a 
+        idade do usuário em anos, em meses, em dias e em semanas.</p>
+    <form>
+        <label>Ano nascimento: </label>
+        <input id="anoNascimento_" type="number">
+        <label>Ano atual: </label>
+        <input id="anoAtual_" type="number">
+        <input type="button" id="button" value="Submit" onsubmit="calcularAno()">
+    </form>
+    
+    <script>
+        const button = document.getElementById('button');
+
+        function calcularAno() {
+            anoNascimento = document.getElementById('anoNascimento_').value;
+            anoAtual = document.getElementById('anoAtual_').value;
+            dias = 365;
+            meses = 12;
+            semanas = 52;
+
+            anoTotal = anoAtual - anoNascimento;
+            anoDias = anoTotal / dias;
+            anoMeses = anoTotal / meses;
+            anoSemanas = anoTotal / semanas;
+
+            document.getElementById('resultado').innerHTML = "Idade: " + anoTotal + "<br>Dias: " + anoDias + "<br>Meses: " + anoMeses + "<br>Semanas: " + anoSemanas;
+        }
+
+        button.addEventListener('click', calcularAno);
+
+    </script>
+
+    <p id="resultado"></p>
+</body>
+</html>
